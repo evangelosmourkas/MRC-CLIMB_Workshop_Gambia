@@ -7,7 +7,7 @@ Genomes and reads associated with this show-case tutorial is linked to the follo
 ## Files Summary
 The files include data for 169 isolates representing a collection sampled from human clinical cases, animals and sewage: Each directory contains the following:
 * **Raw_Reads**: directory with raw reads data
-* **Core_alignment.fas**: directory with assemblies
+* **Assemblies**: directory with assemblies
 * **Core_alignment.fas**: Core alignment of 169 assembled genomes  
 * **Phylogeny.nwk**: Maximum-likelihood tree reconstructed by FastTree  
 * **_Visualization_script.R_**: rscript for compiling phylogeny and metadata
@@ -15,9 +15,11 @@ The files include data for 169 isolates representing a collection sampled from h
 
 ## Software and packages
 * SPAdes v3.15.5 
-* checkM v1.1.6 (requires Python 3)
+* checkM v1.1.6
 * Snippy 4.4.3
-* FastTree 2.1.11 
+* MLST v2.23.0
+* PIRATE
+* RAxML v8.2.11 
 * Abricate
 
 ## R packages
