@@ -26,17 +26,33 @@ The files include data for 169 isolates representing a collection sampled from h
 * ape
 
 # Workflow
-## Reads assembly (with SPAdes) – Optional?
+## Reads assembly (with SPAdes)
 ```
+spades.py –12 short_read_files –phred-offset 33 -o output_directory
 ```
-
 ## Genome quality control (with checkM)
 ```
 checkm lineage_wf -t 30 -x fas ./contigs/ /home/ubuntu/Output_directory
 ```
+## Assigning MLST using pubMLST schemes
+```
+mlst genome.fas
+```
 ## Generating a core genome alignment
 ```
 snippy --ref ref.gbk --outdir isolate1 --ctgs ./contigs/isolate1.fas (submission script)
+```
+## Creating a pangenome using PIRATE (optional)
+```
+perl ./bin/PIRATE -i input_directory (directory with gff files) -o output_directory -a -r
+```
+## Reconstructing a neighbor-joining phylogeny (using core alignment generated)
+```
+rapidnj core_alignment.fas -i sth
+```
+## Reconstructing a Maximum-likelihood phylogeny (using core alignment generated)
+```
+raxmlHPC-PTHREADS -s core_alignment.fas -n core_phylogeny.nwk -T 8 -m GTRGAMMA -p 12345 
 ```
 ## Screening assemblies for antimicrobial resistance genetic determinants
 ```
