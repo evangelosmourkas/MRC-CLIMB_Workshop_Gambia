@@ -6,7 +6,7 @@ Genomes and reads associated with this show-case tutorial is linked to the follo
 
 ## Files Summary
 The files include data for 169 isolates representing a collection sampled from human clinical cases, animals and sewage: Each directory contains the following:
-* **Raw_Reads**: directory with raw reads data (will be available on figshare)
+* **Raw_Reads**: directory with raw reads data (currently available on NCBI BioProject PRJNA528879 - will be available on figshare)
 * **Assemblies**: directory with assemblies (available on figshare)
 * **Core_alignment.fas**: Core alignment of 169 assembled genomes (available on figshare)
 * **Phylogeny.nwk**: Maximum-likelihood tree reconstructed by FastTree  
