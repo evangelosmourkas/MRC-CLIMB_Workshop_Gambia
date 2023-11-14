@@ -6,12 +6,13 @@ Genomes and reads associated with this show-case tutorial is linked to the follo
 
 ## Files Summary
 The files include data for 169 isolates representing a collection sampled from human clinical cases, animals and sewage: Each directory contains the following:
-* **Raw_Reads**: directory with raw reads data 
+* **Raw_Reads**: directory with raw reads data (will be available on figshare)
 * **Assemblies**: directory with assemblies (available on figshare)
 * **Core_alignment.fas**: Core alignment of 169 assembled genomes (available on figshare)
 * **Phylogeny.nwk**: Maximum-likelihood tree reconstructed by FastTree  
 * **Metadata.csv**: Genome metadata .csv file used for visualization
 * **Figshare_DOI.txt**: File with doi links to data repositories in figshare
+* **Antimicrobial_resistance_PA.xlsx**: Presence absence of AMR genes
 
 ## Software and packages
 * SPAdes v3.15.5 
